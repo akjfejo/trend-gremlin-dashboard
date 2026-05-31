@@ -1,0 +1,17 @@
+# Modal credentials — never commit
+.modal.env
+.modal.usage.txt
+.modal.toml
+
+# Python
+__pycache__/
+*.pyc
+
+# Secrets / local env (never commit)
+.env
+*.toml
+
+# Scratch / backups
+_backup_*.json
+.DS_Store
+*.log

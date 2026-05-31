@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Self-Improving Loop — Live Dashboard</title>
+<title>The Cringe Filter — Live Dashboard</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -96,6 +96,12 @@
   .chip::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--violet);}
 
   .counter{display:flex;align-items:center;gap:18px;}
+  .replaybadge{
+    display:none;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;
+    letter-spacing:1.5px;color:#08130c;background:var(--amber);border:1px solid var(--amber);
+    padding:5px 11px;border-radius:999px;text-transform:uppercase;
+  }
+  .replaybadge.show{display:inline-flex;}
   .iterbox{text-align:right;}
   .iterbox .lab{font-size:11px;letter-spacing:3px;color:var(--dim);text-transform:uppercase;}
   .iterbox .n{font-size:62px;font-weight:700;line-height:.85;font-family:'JetBrains Mono',monospace;}
@@ -126,11 +132,11 @@
   .topline .big{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:30px;line-height:1;}
   .topline .lab{font-size:11px;letter-spacing:2px;color:var(--dim);text-transform:uppercase;}
 
-  /* ---------------- BOTTOM: image wall ---------------- */
+  /* ---------------- BOTTOM: video wall ---------------- */
   .wall{
     background:linear-gradient(180deg,var(--panel),var(--bg2));
     border:1px solid var(--line);border-radius:16px;padding:12px 16px 14px;
-    display:flex;flex-direction:column;gap:10px;height:280px;
+    display:flex;flex-direction:column;gap:10px;height:330px;
   }
   .wall .whead{display:flex;align-items:center;gap:12px;}
   .wall .whead h2{font-size:16px;font-weight:600;}
@@ -152,11 +158,20 @@
   .setcard{
     flex:0 0 auto;background:var(--panel2);border:2px solid var(--line);border-radius:14px;
     padding:10px;display:flex;flex-direction:column;gap:9px;transition:border-color .25s, opacity .25s, transform .25s;
-    min-width:170px;
+    width:170px;
   }
-  .setcard .imgs{display:flex;gap:7px;}
-  .setcard .imgs img{width:84px;height:84px;border-radius:8px;object-fit:cover;display:block;background:#0a0d12;border:1px solid rgba(255,255,255,.06);}
-  .setcard .imgph{width:84px;height:84px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:10px;background:repeating-linear-gradient(45deg,#11161d 0 7px,#0d1218 7px 14px);border:1px solid var(--line);text-align:center;}
+  .setcard .media{
+    position:relative;width:100%;aspect-ratio:9/16;border-radius:8px;overflow:hidden;
+    background:#0a0d12;border:1px solid rgba(255,255,255,.06);
+  }
+  .setcard .media video{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#0a0d12;
+  }
+  .setcard .mediaph{
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--dim);
+    font-size:11px;font-family:'JetBrains Mono',monospace;text-align:center;
+    background:repeating-linear-gradient(45deg,#11161d 0 7px,#0d1218 7px 14px);
+  }
   .setcard .meta{display:flex;align-items:center;gap:9px;}
   .setcard .score{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:26px;line-height:1;}
   .setcard .sid{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--dim);}
@@ -180,6 +195,7 @@
   #waiting .sub{font-size:14px;color:var(--muted);font-family:'JetBrains Mono',monospace;}
   @keyframes spin{to{transform:rotate(360deg)}}
 </style>
+<script src="/__config__.js"></script>
 </head>
 <body>
 <div id="app">
@@ -194,7 +210,7 @@
   <header>
     <div class="brand">
       <span class="kick">Self-Improving Loop</span>
-      <h1>Policy Trainer</h1>
+      <h1>The Cringe Filter 🪤</h1>
       <span class="vert">vertical: <b id="vertical">—</b></span>
     </div>
     <div class="trending">
@@ -202,6 +218,7 @@
       <div class="chips" id="chips"></div>
     </div>
     <div class="counter">
+      <span class="replaybadge" id="replayBadge">REPLAY</span>
       <div class="iterbox">
         <div class="lab">Iteration</div>
         <div class="n"><span id="iterN">0</span><span class="of" id="iterOf"></span></div>
@@ -235,11 +252,11 @@
     </div>
   </div>
 
-  <!-- IMAGE WALL -->
+  <!-- VIDEO WALL -->
   <div class="wall">
     <div class="whead">
       <h2>Candidate sets</h2>
-      <span class="hint" id="wallHint">current iteration · winner highlighted, gibberish rejected</span>
+      <span class="hint" id="wallHint">current iteration · winner highlighted, incoherent rejected</span>
       <span class="spacer"></span>
       <button class="replaybtn" id="replayBtn">▶ replay iterations</button>
     </div>
@@ -267,17 +284,46 @@
 
 <script>
 /* =====================================================================
-   Live dashboard for the self-improving content loop.
-   Polls state.json every 1s, renders policy + score + image wall.
+   Live dashboard for the video-native self-improving content loop.
+   Polls state.json every ~1s, renders policy + score + video wall.
+
+   The server injects a config script (the /__config__ endpoint) into the
+   page head at serve time, defining window.__DEMO_REPLAY__ and
+   window.__STATE_URL__. We read those here with safe defaults so the raw
+   file still opens standalone.
    ===================================================================== */
 const ELEMENTS = ["90s","high-school","emo","rock-and-roll","comedy","dark","dance-challenge","slow-mo","neon","retro-film","wholesome","chaotic"];
 const $ = s => document.querySelector(s);
+
+// Server-injected config (safe defaults so the raw file still works).
+const STATE_URL = (window.__STATE_URL__ || "state.json");
+const REPLAY = !!window.__DEMO_REPLAY__;
 
 let policyChart, scoreChart;
 let lastGood = null;       // last valid state
 let viewIndex = null;      // null = follow live latest; number = pinned (replay)
 let replaying = false;
 let missCount = 0;
+
+// Preserve <video> elements across re-renders by keying on iter+setid so
+// autoplay/playback isn't interrupted every poll.
+const videoCache = new Map(); // key -> { wrap, video, ph, src }
+
+/* ---------- video guard ----------
+   A video_url only counts as a *real video* if it's an mp4 (or sibling)
+   https URL or a repo-root-relative path. '' , data: URIs and other junk
+   fall back to the design's placeholder box. */
+function isPlayableVideo(u){
+  if(typeof u!=="string" || u==="") return false;
+  if(u.startsWith("data:")) return false;             // data-URIs are NOT video
+  const lower = u.split("?")[0].split("#")[0].toLowerCase();
+  if(/^https?:\/\//.test(u)){
+    return /\.(mp4|webm|mov|m4v)(\?|#|$)/.test(u.toLowerCase()) || /^https?:\/\//.test(u);
+  }
+  // repo-root-relative path: must end in a video extension
+  if(/\.(mp4|webm|mov|m4v)$/.test(lower)) return true;
+  return false;
+}
 
 /* ---------- chart setup ---------- */
 function initCharts(){
@@ -345,9 +391,9 @@ function render(state){
   $("#bestNow").textContent = (cur.best_score!=null?cur.best_score.toFixed(1):"—");
 
   // policy chart — ghost iter0 + current, top-3 highlighted green
-  const tops = new Set(topElements(cur.policy, 3));
-  policyChart.data.datasets[0].data = ELEMENTS.map(e => iter0.policy[e] ?? 0);
-  policyChart.data.datasets[1].data = ELEMENTS.map(e => cur.policy[e] ?? 0);
+  const tops = new Set(topElements(cur.policy||{}, 3));
+  policyChart.data.datasets[0].data = ELEMENTS.map(e => (iter0.policy||{})[e] ?? 0);
+  policyChart.data.datasets[1].data = ELEMENTS.map(e => (cur.policy||{})[e] ?? 0);
   policyChart.data.datasets[1].backgroundColor = ELEMENTS.map(e => tops.has(e) ? "#3FE08A" : "#3C72B0");
   policyChart.update();
 
@@ -358,12 +404,12 @@ function render(state){
   scoreChart.data.datasets[1].data = upto.map(i=>i.avg_score);
   scoreChart.update();
 
-  // image wall
+  // video wall
   renderWall(cur);
 
   // wall hint reflects view mode
   $("#wallHint").textContent = (viewIndex==null)
-    ? "current iteration · winner highlighted, gibberish rejected"
+    ? "current iteration · winner highlighted, incoherent rejected"
     : `replaying iteration ${cur.iter} of ${its[its.length-1].iter}`;
 
   renderRaindrop(state);
@@ -371,35 +417,101 @@ function render(state){
 
 function renderWall(cur){
   const sets = cur.sets || [];
-  const best = sets.reduce((m,s)=> s.score>m ? s.score : m, -Infinity);
-  $("#setrow").innerHTML = sets.map(s=>{
-    const isWin = s.coherent!==false && s.score===best;
+  // winner = highest score among coherent !== false sets
+  const best = sets.reduce((m,s)=> (s.coherent!==false && typeof s.score==="number" && s.score>m) ? s.score : m, -Infinity);
+  const row = $("#setrow");
+  row.innerHTML = "";
+  sets.forEach(s=>{
+    const isWin = s.coherent!==false && typeof s.score==="number" && s.score===best && best!==-Infinity;
     const isRej = s.coherent===false;
     const cls = isWin ? "winner" : isRej ? "reject" : "ok";
     const status = isWin ? "★ winner" : isRej ? "rejected" : "ok";
-    const imgs = (s.images&&s.images.length)
-      ? s.images.map(src=>`<img src="${src}" alt="${s.id}" loading="lazy" onerror="this.outerHTML='<div class=&quot;imgph&quot;>no img</div>'">`).join("")
-      : `<div class="imgph">cooking…</div>`;
-    const tags = (s.elements||[]).map(e=>`<span class="tag">${escapeHtml(e)}</span>`).join("");
-    return `<div class="setcard ${cls}">
-        <div class="imgs">${imgs}</div>
-        <div class="meta">
-          <span class="score">${s.score!=null?s.score.toFixed(1):"–"}</span>
-          <span class="sid">${escapeHtml(s.id||"")}</span>
-          <span class="status">${status}</span>
-        </div>
-        <div class="tags">${tags}</div>
-      </div>`;
-  }).join("");
+
+    const card = document.createElement("div");
+    card.className = "setcard " + cls;
+
+    const media = buildMedia("i"+cur.iter+"_"+(s.id||"?"), s.video_url || "");
+
+    const meta = document.createElement("div");
+    meta.className = "meta";
+    meta.innerHTML =
+      `<span class="score">${typeof s.score==="number"?s.score.toFixed(1):"–"}</span>` +
+      `<span class="sid">${escapeHtml(s.id||"")}</span>` +
+      `<span class="status">${status}</span>`;
+
+    const tags = document.createElement("div");
+    tags.className = "tags";
+    tags.innerHTML = (s.elements||[]).map(e=>`<span class="tag">${escapeHtml(e)}</span>`).join("");
+
+    card.appendChild(media);
+    card.appendChild(meta);
+    card.appendChild(tags);
+    row.appendChild(card);
+  });
+}
+
+// Build (or reuse) a cached vertical 9:16 <video> media box. Renders a
+// VERTICAL muted/autoplay/loop/playsinline <video>; falls back to the
+// "cooking…" placeholder when the url isn't a playable video.
+function buildMedia(key, url){
+  let entry = videoCache.get(key);
+  const playable = isPlayableVideo(url);
+
+  if(!entry){
+    const wrap = document.createElement("div");
+    wrap.className = "media";
+    const ph = document.createElement("div");
+    ph.className = "mediaph";
+    ph.textContent = "cooking…";
+    const video = document.createElement("video");
+    video.muted = true; video.autoplay = true; video.loop = true;
+    video.playsInline = true; video.setAttribute("playsinline","");
+    video.setAttribute("muted","");
+    video.preload = "metadata";
+    video.style.display = "none";
+    video.addEventListener("loadeddata", ()=>{
+      ph.style.display="none"; video.style.display="block";
+      video.play().catch(()=>{});
+    });
+    video.addEventListener("error", ()=>{
+      video.style.display="none";
+      ph.style.display="flex"; ph.textContent="clip unavailable";
+    });
+    wrap.appendChild(video);
+    wrap.appendChild(ph);
+    entry = { wrap, video, ph, src:null };
+    videoCache.set(key, entry);
+  }
+  const { wrap, video, ph } = entry;
+
+  if(playable){
+    if(entry.src !== url){            // only reset src when it actually changes
+      entry.src = url;
+      ph.style.display="flex"; ph.textContent="loading clip…";
+      video.style.display="none";
+      video.src = url;
+      video.load();
+    }
+  } else {
+    entry.src = null;
+    video.removeAttribute("src");
+    video.style.display="none";
+    ph.style.display="flex"; ph.textContent = url ? "no clip" : "cooking…";
+  }
+  return wrap;
 }
 
 function escapeHtml(s){ return String(s).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c])); }
 
-/* ---------- raindrop panel (pure read from state.raindrop) ---------- */
+/* ---------- raindrop "Loop Activity" panel (pure read from state.raindrop) ----------
+   NEVER calls Workshop / no browser SDK / no fetch. The "Open Workshop" button is a
+   plain link to state.raindrop.workshop_url (the 2nd-screen :5899 page) opened in a
+   NEW TAB. If state.raindrop is missing/empty we render nothing, collapse the rail,
+   hide the banner, and keep polling — never crash. */
 const acked = new Set(JSON.parse(localStorage.getItem("rd_acked")||"[]"));
 const ackKey = e => e.iter+"|"+e.label;
 function renderRaindrop(state){
-  const rd = state.raindrop;
+  const rd = state && state.raindrop;
   const rail = $("#rail"), app = $("#app"), alarm = $("#alarm");
   // missing/empty -> render nothing, collapse rail, keep polling
   if(!rd || !Array.isArray(rd.events) || rd.events.length===0){
@@ -408,12 +520,12 @@ function renderRaindrop(state){
   }
   app.classList.add("has-rail"); rail.style.display="";
 
-  // Open Workshop link
+  // Open Workshop link -> state.raindrop.workshop_url, opened in a NEW TAB
   const ws = $("#wsBtn");
   if(rd.workshop_url){ ws.style.display=""; ws.href = rd.workshop_url; }
   else ws.style.display="none";
 
-  // feed, newest-first
+  // feed, newest-first; warn=red/highlighted, info=muted
   const evs = [...rd.events].reverse();
   $("#feed").innerHTML = evs.map(e=>{
     const warn = e.severity==="warn";
@@ -469,7 +581,6 @@ function startReplay(){
     viewIndex = i; render(lastGood);
   }, 1100);
 }
-$("#replayBtn").addEventListener("click", startReplay);
 
 /* ---------- polling ---------- */
 function validState(d){
@@ -480,7 +591,7 @@ function validState(d){
 async function poll(){
   let data = null;
   try{
-    const res = await fetch("state.json?_="+Date.now(), {cache:"no-store"});
+    const res = await fetch(STATE_URL+"?_="+Date.now(), {cache:"no-store"});
     if(res.ok){
       const txt = await res.text();
       if(txt && txt.trim()) data = JSON.parse(txt);
@@ -510,9 +621,15 @@ function setLive(ok){
 }
 
 /* ---------- boot ---------- */
-initCharts();
-poll();
-setInterval(poll, 1000);
+function boot(){
+  if(REPLAY){ $("#replayBadge").classList.add("show"); }
+  $("#waitSub").textContent = "polling " + STATE_URL + " every 1s";
+  $("#replayBtn").addEventListener("click", startReplay);
+  initCharts();
+  poll();
+  setInterval(poll, 1000);
+}
+boot();
 </script>
 </body>
 </html>

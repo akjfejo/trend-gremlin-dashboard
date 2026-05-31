@@ -1,0 +1,120 @@
+{
+  "vertical": "TikTok dance",
+  "trending": [
+    "Tame Impala - Dracula",
+    "Jersey Club remix",
+    "slow-mo transitions"
+  ],
+  "current_iteration": 2,
+  "iterations": [
+    {
+      "iter": 1,
+      "policy": {
+        "90s": 0.09660077169894495,
+        "high-school": 0.09660077169894495,
+        "emo": 0.06807341327388308,
+        "rock-and-roll": 0.06807341327388308,
+        "comedy": 0.06807341327388308,
+        "dark": 0.06807341327388308,
+        "dance-challenge": 0.06807341327388308,
+        "slow-mo": 0.06807341327388308,
+        "neon": 0.09660077169894495,
+        "retro-film": 0.06807341327388308,
+        "wholesome": 0.13708302028703873,
+        "chaotic": 0.09660077169894495
+      },
+      "best_score": 7.2,
+      "avg_score": 7.2,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "chaotic",
+            "wholesome",
+            "90s"
+          ],
+          "score": 7.2,
+          "coherent": true,
+          "video_url": "demo_cache/clips/real_i1_s0.mp4"
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "high-school",
+            "wholesome",
+            "neon"
+          ],
+          "score": 7.2,
+          "coherent": true,
+          "video_url": "demo_cache/clips/real_i1_s1.mp4"
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "neon",
+            "rock-and-roll",
+            "slow-mo"
+          ],
+          "score": 7.2,
+          "coherent": true,
+          "video_url": "demo_cache/clips/real_i1_s2.mp4"
+        }
+      ]
+    },
+    {
+      "iter": 2,
+      "policy": {
+        "90s": 0.07815922029361393,
+        "high-school": 0.07815922029361393,
+        "emo": 0.0550778716426109,
+        "rock-and-roll": 0.0550778716426109,
+        "comedy": 0.07815922029361393,
+        "dark": 0.0550778716426109,
+        "dance-challenge": 0.11091321314201909,
+        "slow-mo": 0.0550778716426109,
+        "neon": 0.11091321314201906,
+        "retro-film": 0.0550778716426109,
+        "wholesome": 0.11091321314201909,
+        "chaotic": 0.15739334148004647
+      },
+      "best_score": 7.333333333333333,
+      "avg_score": 6.944444444444444,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "neon",
+            "chaotic",
+            "dance-challenge"
+          ],
+          "score": 7.2,
+          "coherent": true,
+          "video_url": "demo_cache/clips/real_i2_s0.mp4"
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "retro-film",
+            "wholesome",
+            "dark"
+          ],
+          "score": 6.3,
+          "coherent": true,
+          "video_url": "demo_cache/clips/real_i2_s1.mp4"
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "comedy",
+            "chaotic",
+            "dance-challenge"
+          ],
+          "score": 7.333333333333333,
+          "coherent": true,
+          "video_url": ""
+        }
+      ]
+    }
+  ],
+  "real": true
+}
