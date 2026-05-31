@@ -1,0 +1,1699 @@
+{
+  "vertical": "TikTok dance",
+  "trending": [
+    "Tame Impala - Dracula",
+    "Jersey Club remix",
+    "slow-mo transitions"
+  ],
+  "current_iteration": 20,
+  "raindrop": {
+    "workshop_url": "http://localhost:5899",
+    "events": [
+      {
+        "iter": 0,
+        "type": "trace",
+        "label": "iter-0",
+        "detail": "best 4 · avg 2.4 · top: 90s 8%",
+        "severity": "info"
+      },
+      {
+        "iter": 1,
+        "type": "trace",
+        "label": "iter-1",
+        "detail": "best 4.7 · avg 3.6 · top: comedy 10%",
+        "severity": "info"
+      },
+      {
+        "iter": 2,
+        "type": "trace",
+        "label": "iter-2",
+        "detail": "best 5.1 · avg 3.9 · top: comedy 13%",
+        "severity": "info"
+      },
+      {
+        "iter": 2,
+        "type": "trace",
+        "label": "judge",
+        "detail": "rejected s2 (wholesome + retro-film) as incoherent",
+        "severity": "warn"
+      },
+      {
+        "iter": 3,
+        "type": "trace",
+        "label": "iter-3",
+        "detail": "best 5.5 · avg 4.6 · top: comedy 15%",
+        "severity": "info"
+      },
+      {
+        "iter": 4,
+        "type": "trace",
+        "label": "iter-4",
+        "detail": "best 5.8 · avg 5 · top: comedy 18%",
+        "severity": "info"
+      },
+      {
+        "iter": 5,
+        "type": "trace",
+        "label": "iter-5",
+        "detail": "best 6.1 · avg 4.6 · top: comedy 21%",
+        "severity": "info"
+      },
+      {
+        "iter": 5,
+        "type": "trace",
+        "label": "judge",
+        "detail": "rejected s2 (rock-and-roll + dark) as incoherent",
+        "severity": "warn"
+      },
+      {
+        "iter": 6,
+        "type": "trace",
+        "label": "iter-6",
+        "detail": "best 6.4 · avg 5.1 · top: comedy 24%",
+        "severity": "info"
+      },
+      {
+        "iter": 7,
+        "type": "trace",
+        "label": "iter-7",
+        "detail": "best 6.6 · avg 5.8 · top: comedy 27%",
+        "severity": "info"
+      },
+      {
+        "iter": 8,
+        "type": "trace",
+        "label": "iter-8",
+        "detail": "best 6.9 · avg 6.2 · top: comedy 30%",
+        "severity": "info"
+      },
+      {
+        "iter": 9,
+        "type": "trace",
+        "label": "iter-9",
+        "detail": "best 7.1 · avg 6.4 · top: comedy 33%",
+        "severity": "info"
+      },
+      {
+        "iter": 9,
+        "type": "alarm",
+        "label": "mode-collapse",
+        "detail": "mode-collapse detected at iter 9 — comedy weight 33% and climbing, entropy dropping",
+        "severity": "warn"
+      },
+      {
+        "iter": 10,
+        "type": "trace",
+        "label": "iter-10",
+        "detail": "best 7.4 · avg 6.5 · top: comedy 36%",
+        "severity": "info"
+      },
+      {
+        "iter": 11,
+        "type": "trace",
+        "label": "iter-11",
+        "detail": "best 7.6 · avg 6.5 · top: comedy 38%",
+        "severity": "info"
+      },
+      {
+        "iter": 12,
+        "type": "trace",
+        "label": "iter-12",
+        "detail": "best 7.8 · avg 7 · top: comedy 40%",
+        "severity": "info"
+      },
+      {
+        "iter": 13,
+        "type": "trace",
+        "label": "iter-13",
+        "detail": "best 8 · avg 7 · top: comedy 42%",
+        "severity": "info"
+      },
+      {
+        "iter": 14,
+        "type": "trace",
+        "label": "iter-14",
+        "detail": "best 8.2 · avg 7.2 · top: comedy 43%",
+        "severity": "info"
+      },
+      {
+        "iter": 15,
+        "type": "trace",
+        "label": "iter-15",
+        "detail": "best 8.4 · avg 7.4 · top: comedy 45%",
+        "severity": "info"
+      },
+      {
+        "iter": 16,
+        "type": "trace",
+        "label": "iter-16",
+        "detail": "best 8.6 · avg 7.8 · top: comedy 46%",
+        "severity": "info"
+      },
+      {
+        "iter": 17,
+        "type": "trace",
+        "label": "iter-17",
+        "detail": "best 8.8 · avg 8 · top: comedy 47%",
+        "severity": "info"
+      },
+      {
+        "iter": 18,
+        "type": "trace",
+        "label": "iter-18",
+        "detail": "best 9 · avg 8 · top: comedy 48%",
+        "severity": "info"
+      },
+      {
+        "iter": 19,
+        "type": "trace",
+        "label": "iter-19",
+        "detail": "best 9.2 · avg 8.1 · top: comedy 49%",
+        "severity": "info"
+      },
+      {
+        "iter": 20,
+        "type": "trace",
+        "label": "iter-20",
+        "detail": "best 9.4 · avg 8.4 · top: comedy 50%",
+        "severity": "info"
+      }
+    ]
+  },
+  "iterations": [
+    {
+      "iter": 0,
+      "policy": {
+        "90s": 0.083,
+        "high-school": 0.083,
+        "emo": 0.083,
+        "rock-and-roll": 0.083,
+        "comedy": 0.083,
+        "dark": 0.083,
+        "dance-challenge": 0.083,
+        "slow-mo": 0.083,
+        "neon": 0.083,
+        "retro-film": 0.083,
+        "wholesome": 0.083,
+        "chaotic": 0.083
+      },
+      "best_score": 4,
+      "avg_score": 2.4,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "comedy",
+            "dance-challenge",
+            "90s"
+          ],
+          "score": 4,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWM0ODk5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjODMxODQzIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI2NyIgY3k9IjEwMyIgcj0iMzciIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODgiIGN5PSIyMjQiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNDkiIGN5PSI4NSIgcj0iMjkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxNzAiIGN5PSIyMDYiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2UgKyA5MHM8L3RleHQ+PC9zdmc+",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI3NCIgY3k9IjEwNiIgcj0iMzgiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxOTYiIGN5PSIyMjgiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNTgiIGN5PSI5MCIgcj0iMjkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODAiIGN5PSIyMTIiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYyPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2UgKyA5MHM8L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "comedy",
+            "neon"
+          ],
+          "score": 2.5,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI5MSIgY3k9IjM5IiByPSIyOSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEwNCIgY3k9IjUyIiByPSIzNiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjExNyIgY3k9IjY1IiByPSIyOSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEzMCIgY3k9Ijc4IiByPSI0OCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMSB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgbmVvbjwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "retro-film",
+            "emo"
+          ],
+          "score": 1.6,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWY0NDQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2YxZDFkIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMjkiIGN5PSI2MSIgcj0iMjciIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI3NiIgY3k9IjE2OCIgcj0iMjQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODMiIGN5PSIxNSIgcj0iNTIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIzMCIgY3k9IjEyMiIgcj0iMzkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzIgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPnJldHJvLWZpbG0gKyBlbW88L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "emo",
+            "dark"
+          ],
+          "score": 1.6,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxMDkiIGN5PSIxMjEiIHI9IjM1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjM2IiBjeT0iMjQ4IiByPSI0OSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEwMyIgY3k9IjExNSIgcj0iNTUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMzAiIGN5PSIyNDIiIHI9IjM1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5lbW8gKyBkYXJrPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 1,
+      "policy": {
+        "90s": 0.095,
+        "high-school": 0.079,
+        "emo": 0.074,
+        "rock-and-roll": 0.078,
+        "comedy": 0.103,
+        "dark": 0.074,
+        "dance-challenge": 0.099,
+        "slow-mo": 0.083,
+        "neon": 0.082,
+        "retro-film": 0.078,
+        "wholesome": 0.079,
+        "chaotic": 0.077
+      },
+      "best_score": 4.7,
+      "avg_score": 3.6,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "comedy",
+            "90s"
+          ],
+          "score": 4.7,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjODRjYzE2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2Y2MjEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNTQiIGN5PSIxNDYiIHI9IjQ2IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjE2IiBjeT0iMTA4IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE3OCIgY3k9IjcwIiByPSI1NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE0MCIgY3k9IjMyIiByPSI0NyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMCB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgOTBzPC90ZXh0Pjwvc3ZnPg==",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMWUzYThhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNDciIGN5PSIxNDMiIHI9IjQ1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjA4IiBjeT0iMTA0IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE2OSIgY3k9IjY1IiByPSI1NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEzMCIgY3k9IjI2IiByPSI0NyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMCB2MjwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgOTBzPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "dance-challenge",
+            "slow-mo"
+          ],
+          "score": 3.4,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDZiNmQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGU3NDkwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI1IiBjeT0iMjI1IiByPSIyNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjgwIiBjeT0iNDAiIHI9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTU1IiBjeT0iMTE1IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjIzMCIgY3k9IjE5MCIgcj0iMzAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzEgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIHNsb3ctbW88L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "emo",
+            "dark"
+          ],
+          "score": 3.4,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI1NCIgY3k9IjI0NiIgcj0iMzQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMzYiIGN5PSI2OCIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMTgiIGN5PSIxNTAiIHI9IjI3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNDAiIGN5PSIyMzIiIHI9IjI4IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMyIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5lbW8gKyBkYXJrPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "wholesome",
+            "retro-film"
+          ],
+          "score": 2.7,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNGMxZDk1Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxNDQiIGN5PSIxMzYiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTYiIGN5PSI4IiByPSIyNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE0OCIgY3k9IjE0MCIgcj0iMjQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjEyIiByPSI0OCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMyB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+d2hvbGVzb21lICsgcmV0cm8tZmlsbTwvdGV4dD48L3N2Zz4="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 2,
+      "policy": {
+        "90s": 0.106,
+        "high-school": 0.074,
+        "emo": 0.065,
+        "rock-and-roll": 0.071,
+        "comedy": 0.125,
+        "dark": 0.064,
+        "dance-challenge": 0.117,
+        "slow-mo": 0.081,
+        "neon": 0.08,
+        "retro-film": 0.072,
+        "wholesome": 0.073,
+        "chaotic": 0.071
+      },
+      "best_score": 5.1,
+      "avg_score": 3.9,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "dance-challenge",
+            "90s"
+          ],
+          "score": 5.1,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMzYiIGN5PSI2NCIgcj0iMzYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI4NCIgY3k9IjE3MiIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxOTIiIGN5PSIyMCIgcj0iMzEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI0MCIgY3k9IjEyOCIgcj0iNDAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzAgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIDkwczwvdGV4dD48L3N2Zz4=",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMWUzYThhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMjkiIGN5PSI2MSIgcj0iMzUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI3NiIgY3k9IjE2OCIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODMiIGN5PSIxNSIgcj0iMzEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIzMCIgY3k9IjEyMiIgcj0iNDAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzAgdjI8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIDkwczwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "90s",
+            "comedy"
+          ],
+          "score": 4.5,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxNjMiIGN5PSIxMDciIHI9IjMzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTEyIiBjeT0iNTYiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNjEiIGN5PSI1IiByPSIzMyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEwIiBjeT0iMjE0IiByPSI0OSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMSB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+OTBzICsgY29tZWR5PC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "wholesome",
+            "retro-film"
+          ],
+          "score": 3,
+          "coherent": false,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNGMxZDk1Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNSIgY3k9Ijg1IiByPSIyNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE0MCIgY3k9IjIwMCIgcj0iNDAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyNTUiIGN5PSI1NSIgcj0iMzQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMTAiIGN5PSIxNzAiIHI9IjI5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMyIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij53aG9sZXNvbWUgKyByZXRyby1maWxtPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "chaotic",
+            "neon"
+          ],
+          "score": 3,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMDUiIGN5PSIxMjUiIHI9IjQ3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTYwIiBjeT0iODAiIHI9IjQyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTE1IiBjeT0iMzUiIHI9IjQ2IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNzAiIGN5PSIyNTAiIHI9IjM0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jaGFvdGljICsgbmVvbjwvdGV4dD48L3N2Zz4="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 3,
+      "policy": {
+        "90s": 0.117,
+        "high-school": 0.068,
+        "emo": 0.056,
+        "rock-and-roll": 0.065,
+        "comedy": 0.151,
+        "dark": 0.055,
+        "dance-challenge": 0.135,
+        "slow-mo": 0.079,
+        "neon": 0.076,
+        "retro-film": 0.066,
+        "wholesome": 0.067,
+        "chaotic": 0.064
+      },
+      "best_score": 5.5,
+      "avg_score": 4.6,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "comedy",
+            "dance-challenge"
+          ],
+          "score": 5.5,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWY0NDQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2YxZDFkIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxOTkiIGN5PSIxMSIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMTYiIGN5PSIxODgiIHI9IjM5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMzMiIGN5PSIxMDUiIHI9IjMzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjEwIiBjeT0iMjIiIHI9IjQ5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2U8L3RleHQ+PC9zdmc+",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDZiNmQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGU3NDkwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMDYiIGN5PSIxNCIgcj0iNTQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMjQiIGN5PSIxOTIiIHI9IjM5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNDIiIGN5PSIxMTAiIHI9IjMzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjIwIiBjeT0iMjgiIHI9IjQ5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYyPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2U8L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "90s",
+            "wholesome"
+          ],
+          "score": 4.9,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxODEiIGN5PSIxODkiIHI9IjQzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjQ0IiBjeT0iMjUyIiByPSIzOCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjQ3IiBjeT0iNTUiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTEwIiBjeT0iMTE4IiByPSI0MSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMSB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+OTBzICsgd2hvbGVzb21lPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "chaotic",
+            "neon"
+          ],
+          "score": 4.1,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxMCIgY3k9IjE5MCIgcj0iNDYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxNjAiIGN5PSI4MCIgcj0iMzAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI1MCIgY3k9IjIzMCIgcj0iNTIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSIxMjAiIHI9IjM5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMyIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jaGFvdGljICsgbmVvbjwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "high-school",
+            "slow-mo"
+          ],
+          "score": 4,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxMzEiIGN5PSIxOSIgcj0iNDEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMjQiIGN5PSIxMTIiIHI9IjUwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNTciIGN5PSIyMDUiIHI9IjU1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iMzgiIHI9IjQ3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5oaWdoLXNjaG9vbCArIHNsb3ctbW88L3RleHQ+PC9zdmc+"
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 4,
+      "policy": {
+        "90s": 0.128,
+        "high-school": 0.062,
+        "emo": 0.048,
+        "rock-and-roll": 0.058,
+        "comedy": 0.179,
+        "dark": 0.047,
+        "dance-challenge": 0.155,
+        "slow-mo": 0.075,
+        "neon": 0.072,
+        "retro-film": 0.059,
+        "wholesome": 0.061,
+        "chaotic": 0.057
+      },
+      "best_score": 5.8,
+      "avg_score": 5,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "comedy",
+            "dance-challenge",
+            "90s"
+          ],
+          "score": 5.8,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWM0ODk5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjODMxODQzIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI2NyIgY3k9IjEwMyIgcj0iMzciIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODgiIGN5PSIyMjQiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNDkiIGN5PSI4NSIgcj0iMjkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxNzAiIGN5PSIyMDYiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2UgKyA5MHM8L3RleHQ+PC9zdmc+",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI3NCIgY3k9IjEwNiIgcj0iMzgiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxOTYiIGN5PSIyMjgiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNTgiIGN5PSI5MCIgcj0iMjkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODAiIGN5PSIyMTIiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYyPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2UgKyA5MHM8L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "comedy",
+            "neon"
+          ],
+          "score": 5.3,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI5MSIgY3k9IjM5IiByPSIyOSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEwNCIgY3k9IjUyIiByPSIzNiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjExNyIgY3k9IjY1IiByPSIyOSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEzMCIgY3k9Ijc4IiByPSI0OCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMSB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgbmVvbjwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "high-school",
+            "slow-mo"
+          ],
+          "score": 4.7,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxMDIiIGN5PSIxMTgiIHI9IjQyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjI4IiBjeT0iMjQ0IiByPSIzNCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9Ijk0IiBjeT0iMTEwIiByPSI0NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjIyMCIgY3k9IjIzNiIgcj0iNDIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzIgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmhpZ2gtc2Nob29sICsgc2xvdy1tbzwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "rock-and-roll",
+            "dark"
+          ],
+          "score": 4.3,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjODRjYzE2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2Y2MjEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNDUiIGN5PSIxMDUiIHI9IjQ3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjAiIGN5PSIxNDAiIHI9IjM4IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNTUiIGN5PSIxNzUiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iOTAiIGN5PSIyMTAiIHI9IjI5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5yb2NrLWFuZC1yb2xsICsgZGFyazwvdGV4dD48L3N2Zz4="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 5,
+      "policy": {
+        "90s": 0.137,
+        "high-school": 0.056,
+        "emo": 0.04,
+        "rock-and-roll": 0.051,
+        "comedy": 0.209,
+        "dark": 0.039,
+        "dance-challenge": 0.174,
+        "slow-mo": 0.071,
+        "neon": 0.067,
+        "retro-film": 0.052,
+        "wholesome": 0.054,
+        "chaotic": 0.05
+      },
+      "best_score": 6.1,
+      "avg_score": 4.6,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "comedy",
+            "90s"
+          ],
+          "score": 6.1,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjODRjYzE2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2Y2MjEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNTQiIGN5PSIxNDYiIHI9IjQ2IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjE2IiBjeT0iMTA4IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE3OCIgY3k9IjcwIiByPSI1NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE0MCIgY3k9IjMyIiByPSI0NyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMCB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgOTBzPC90ZXh0Pjwvc3ZnPg==",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMWUzYThhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNDciIGN5PSIxNDMiIHI9IjQ1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjA4IiBjeT0iMTA0IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE2OSIgY3k9IjY1IiByPSI1NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEzMCIgY3k9IjI2IiByPSI0NyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMCB2MjwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgOTBzPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "dance-challenge",
+            "slow-mo"
+          ],
+          "score": 5,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDZiNmQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGU3NDkwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI1IiBjeT0iMjI1IiByPSIyNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjgwIiBjeT0iNDAiIHI9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTU1IiBjeT0iMTE1IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjIzMCIgY3k9IjE5MCIgcj0iMzAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzEgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIHNsb3ctbW88L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "rock-and-roll",
+            "dark"
+          ],
+          "score": 3,
+          "coherent": false,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjODRjYzE2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2Y2MjEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMzAiIGN5PSIyMTAiIHI9IjQ2IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNDAiIGN5PSIyMCIgcj0iNTAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMTAiIGN5PSI5MCIgcj0iMzEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODAiIGN5PSIxNjAiIHI9IjQwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMyIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5yb2NrLWFuZC1yb2xsICsgZGFyazwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "retro-film",
+            "emo"
+          ],
+          "score": 4.2,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWY0NDQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2YxZDFkIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNTAiIGN5PSI3MCIgcj0iMjYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxODAiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjEwIiBjeT0iMzAiIHI9IjQzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNjAiIGN5PSIxNDAiIHI9IjU0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5yZXRyby1maWxtICsgZW1vPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 6,
+      "policy": {
+        "90s": 0.145,
+        "high-school": 0.049,
+        "emo": 0.033,
+        "rock-and-roll": 0.044,
+        "comedy": 0.24,
+        "dark": 0.032,
+        "dance-challenge": 0.193,
+        "slow-mo": 0.066,
+        "neon": 0.061,
+        "retro-film": 0.046,
+        "wholesome": 0.047,
+        "chaotic": 0.043
+      },
+      "best_score": 6.4,
+      "avg_score": 5.1,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "dance-challenge",
+            "90s"
+          ],
+          "score": 6.4,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMzYiIGN5PSI2NCIgcj0iMzYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI4NCIgY3k9IjE3MiIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxOTIiIGN5PSIyMCIgcj0iMzEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI0MCIgY3k9IjEyOCIgcj0iNDAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzAgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIDkwczwvdGV4dD48L3N2Zz4=",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMWUzYThhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMjkiIGN5PSI2MSIgcj0iMzUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI3NiIgY3k9IjE2OCIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODMiIGN5PSIxNSIgcj0iMzEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIzMCIgY3k9IjEyMiIgcj0iNDAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzAgdjI8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIDkwczwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "90s",
+            "comedy"
+          ],
+          "score": 5,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxNjMiIGN5PSIxMDciIHI9IjMzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTEyIiBjeT0iNTYiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNjEiIGN5PSI1IiByPSIzMyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEwIiBjeT0iMjE0IiByPSI0OSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMSB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+OTBzICsgY29tZWR5PC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "retro-film",
+            "emo"
+          ],
+          "score": 4.8,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWY0NDQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2YxZDFkIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMjkiIGN5PSI2MSIgcj0iMjciIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI3NiIgY3k9IjE2OCIgcj0iMjQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODMiIGN5PSIxNSIgcj0iNTIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIzMCIgY3k9IjEyMiIgcj0iMzkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzIgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPnJldHJvLWZpbG0gKyBlbW88L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "emo",
+            "dark"
+          ],
+          "score": 4.3,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxMDkiIGN5PSIxMjEiIHI9IjM1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjM2IiBjeT0iMjQ4IiByPSI0OSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEwMyIgY3k9IjExNSIgcj0iNTUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMzAiIGN5PSIyNDIiIHI9IjM1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5lbW8gKyBkYXJrPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 7,
+      "policy": {
+        "90s": 0.151,
+        "high-school": 0.043,
+        "emo": 0.027,
+        "rock-and-roll": 0.038,
+        "comedy": 0.272,
+        "dark": 0.026,
+        "dance-challenge": 0.211,
+        "slow-mo": 0.06,
+        "neon": 0.055,
+        "retro-film": 0.039,
+        "wholesome": 0.041,
+        "chaotic": 0.037
+      },
+      "best_score": 6.6,
+      "avg_score": 5.8,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "comedy",
+            "dance-challenge"
+          ],
+          "score": 6.6,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWY0NDQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2YxZDFkIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxOTkiIGN5PSIxMSIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMTYiIGN5PSIxODgiIHI9IjM5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMzMiIGN5PSIxMDUiIHI9IjMzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjEwIiBjeT0iMjIiIHI9IjQ5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2U8L3RleHQ+PC9zdmc+",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDZiNmQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGU3NDkwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMDYiIGN5PSIxNCIgcj0iNTQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMjQiIGN5PSIxOTIiIHI9IjM5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNDIiIGN5PSIxMTAiIHI9IjMzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjIwIiBjeT0iMjgiIHI9IjQ5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYyPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2U8L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "90s",
+            "wholesome"
+          ],
+          "score": 6.1,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxODEiIGN5PSIxODkiIHI9IjQzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjQ0IiBjeT0iMjUyIiByPSIzOCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjQ3IiBjeT0iNTUiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTEwIiBjeT0iMTE4IiByPSI0MSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMSB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+OTBzICsgd2hvbGVzb21lPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "emo",
+            "dark"
+          ],
+          "score": 5.8,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI1NCIgY3k9IjI0NiIgcj0iMzQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMzYiIGN5PSI2OCIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMTgiIGN5PSIxNTAiIHI9IjI3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNDAiIGN5PSIyMzIiIHI9IjI4IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMyIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5lbW8gKyBkYXJrPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "wholesome",
+            "retro-film"
+          ],
+          "score": 4.6,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNGMxZDk1Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxNDQiIGN5PSIxMzYiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTYiIGN5PSI4IiByPSIyNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE0OCIgY3k9IjE0MCIgcj0iMjQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjEyIiByPSI0OCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMyB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+d2hvbGVzb21lICsgcmV0cm8tZmlsbTwvdGV4dD48L3N2Zz4="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 8,
+      "policy": {
+        "90s": 0.155,
+        "high-school": 0.037,
+        "emo": 0.022,
+        "rock-and-roll": 0.032,
+        "comedy": 0.304,
+        "dark": 0.021,
+        "dance-challenge": 0.228,
+        "slow-mo": 0.054,
+        "neon": 0.049,
+        "retro-film": 0.033,
+        "wholesome": 0.035,
+        "chaotic": 0.031
+      },
+      "best_score": 6.9,
+      "avg_score": 6.2,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "comedy",
+            "dance-challenge",
+            "90s"
+          ],
+          "score": 6.9,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWM0ODk5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjODMxODQzIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI2NyIgY3k9IjEwMyIgcj0iMzciIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODgiIGN5PSIyMjQiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNDkiIGN5PSI4NSIgcj0iMjkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxNzAiIGN5PSIyMDYiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2UgKyA5MHM8L3RleHQ+PC9zdmc+",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI3NCIgY3k9IjEwNiIgcj0iMzgiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxOTYiIGN5PSIyMjgiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNTgiIGN5PSI5MCIgcj0iMjkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODAiIGN5PSIyMTIiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYyPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2UgKyA5MHM8L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "comedy",
+            "neon"
+          ],
+          "score": 6.3,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI5MSIgY3k9IjM5IiByPSIyOSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEwNCIgY3k9IjUyIiByPSIzNiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjExNyIgY3k9IjY1IiByPSIyOSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEzMCIgY3k9Ijc4IiByPSI0OCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMSB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgbmVvbjwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "wholesome",
+            "retro-film"
+          ],
+          "score": 5.8,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNGMxZDk1Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNSIgY3k9Ijg1IiByPSIyNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE0MCIgY3k9IjIwMCIgcj0iNDAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyNTUiIGN5PSI1NSIgcj0iMzQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMTAiIGN5PSIxNzAiIHI9IjI5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMyIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij53aG9sZXNvbWUgKyByZXRyby1maWxtPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "chaotic",
+            "neon"
+          ],
+          "score": 5.6,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMDUiIGN5PSIxMjUiIHI9IjQ3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTYwIiBjeT0iODAiIHI9IjQyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTE1IiBjeT0iMzUiIHI9IjQ2IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNzAiIGN5PSIyNTAiIHI9IjM0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jaGFvdGljICsgbmVvbjwvdGV4dD48L3N2Zz4="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 9,
+      "policy": {
+        "90s": 0.156,
+        "high-school": 0.031,
+        "emo": 0.02,
+        "rock-and-roll": 0.026,
+        "comedy": 0.333,
+        "dark": 0.02,
+        "dance-challenge": 0.241,
+        "slow-mo": 0.048,
+        "neon": 0.043,
+        "retro-film": 0.028,
+        "wholesome": 0.029,
+        "chaotic": 0.026
+      },
+      "best_score": 7.1,
+      "avg_score": 6.4,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "comedy",
+            "90s"
+          ],
+          "score": 7.1,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjODRjYzE2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2Y2MjEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNTQiIGN5PSIxNDYiIHI9IjQ2IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjE2IiBjeT0iMTA4IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE3OCIgY3k9IjcwIiByPSI1NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE0MCIgY3k9IjMyIiByPSI0NyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMCB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgOTBzPC90ZXh0Pjwvc3ZnPg==",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMWUzYThhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNDciIGN5PSIxNDMiIHI9IjQ1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjA4IiBjeT0iMTA0IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE2OSIgY3k9IjY1IiByPSI1NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEzMCIgY3k9IjI2IiByPSI0NyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMCB2MjwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgOTBzPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "dance-challenge",
+            "slow-mo"
+          ],
+          "score": 6.6,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDZiNmQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGU3NDkwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI1IiBjeT0iMjI1IiByPSIyNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjgwIiBjeT0iNDAiIHI9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTU1IiBjeT0iMTE1IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjIzMCIgY3k9IjE5MCIgcj0iMzAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzEgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIHNsb3ctbW88L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "chaotic",
+            "neon"
+          ],
+          "score": 6.3,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxMCIgY3k9IjE5MCIgcj0iNDYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxNjAiIGN5PSI4MCIgcj0iMzAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI1MCIgY3k9IjIzMCIgcj0iNTIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSIxMjAiIHI9IjM5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMyIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jaGFvdGljICsgbmVvbjwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "high-school",
+            "slow-mo"
+          ],
+          "score": 5.4,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxMzEiIGN5PSIxOSIgcj0iNDEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMjQiIGN5PSIxMTIiIHI9IjUwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNTciIGN5PSIyMDUiIHI9IjU1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iMzgiIHI9IjQ3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5oaWdoLXNjaG9vbCArIHNsb3ctbW88L3RleHQ+PC9zdmc+"
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 10,
+      "policy": {
+        "90s": 0.156,
+        "high-school": 0.026,
+        "emo": 0.02,
+        "rock-and-roll": 0.021,
+        "comedy": 0.36,
+        "dark": 0.02,
+        "dance-challenge": 0.251,
+        "slow-mo": 0.042,
+        "neon": 0.037,
+        "retro-film": 0.023,
+        "wholesome": 0.024,
+        "chaotic": 0.021
+      },
+      "best_score": 7.4,
+      "avg_score": 6.5,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "comedy",
+            "90s"
+          ],
+          "score": 7.4,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjODRjYzE2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2Y2MjEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNTQiIGN5PSIxNDYiIHI9IjQ2IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjE2IiBjeT0iMTA4IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE3OCIgY3k9IjcwIiByPSI1NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE0MCIgY3k9IjMyIiByPSI0NyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMCB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgOTBzPC90ZXh0Pjwvc3ZnPg==",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMWUzYThhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNDciIGN5PSIxNDMiIHI9IjQ1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjA4IiBjeT0iMTA0IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE2OSIgY3k9IjY1IiByPSI1NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEzMCIgY3k9IjI2IiByPSI0NyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMCB2MjwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgOTBzPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "dance-challenge",
+            "slow-mo"
+          ],
+          "score": 6.4,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDZiNmQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGU3NDkwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI1IiBjeT0iMjI1IiByPSIyNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjgwIiBjeT0iNDAiIHI9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTU1IiBjeT0iMTE1IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjIzMCIgY3k9IjE5MCIgcj0iMzAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzEgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIHNsb3ctbW88L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "emo",
+            "dark"
+          ],
+          "score": 6.2,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI1NCIgY3k9IjI0NiIgcj0iMzQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMzYiIGN5PSI2OCIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMTgiIGN5PSIxNTAiIHI9IjI3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNDAiIGN5PSIyMzIiIHI9IjI4IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMyIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5lbW8gKyBkYXJrPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "wholesome",
+            "retro-film"
+          ],
+          "score": 5.8,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNGMxZDk1Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxNDQiIGN5PSIxMzYiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTYiIGN5PSI4IiByPSIyNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE0OCIgY3k9IjE0MCIgcj0iMjQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjEyIiByPSI0OCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMyB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+d2hvbGVzb21lICsgcmV0cm8tZmlsbTwvdGV4dD48L3N2Zz4="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 11,
+      "policy": {
+        "90s": 0.152,
+        "high-school": 0.021,
+        "emo": 0.019,
+        "rock-and-roll": 0.019,
+        "comedy": 0.384,
+        "dark": 0.019,
+        "dance-challenge": 0.258,
+        "slow-mo": 0.036,
+        "neon": 0.031,
+        "retro-film": 0.019,
+        "wholesome": 0.02,
+        "chaotic": 0.019
+      },
+      "best_score": 7.6,
+      "avg_score": 6.5,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "dance-challenge",
+            "90s"
+          ],
+          "score": 7.6,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMzYiIGN5PSI2NCIgcj0iMzYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI4NCIgY3k9IjE3MiIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxOTIiIGN5PSIyMCIgcj0iMzEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI0MCIgY3k9IjEyOCIgcj0iNDAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzAgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIDkwczwvdGV4dD48L3N2Zz4=",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMWUzYThhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMjkiIGN5PSI2MSIgcj0iMzUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI3NiIgY3k9IjE2OCIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODMiIGN5PSIxNSIgcj0iMzEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIzMCIgY3k9IjEyMiIgcj0iNDAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzAgdjI8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIDkwczwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "90s",
+            "comedy"
+          ],
+          "score": 6.5,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxNjMiIGN5PSIxMDciIHI9IjMzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTEyIiBjeT0iNTYiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNjEiIGN5PSI1IiByPSIzMyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEwIiBjeT0iMjE0IiByPSI0OSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMSB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+OTBzICsgY29tZWR5PC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "wholesome",
+            "retro-film"
+          ],
+          "score": 6.2,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNGMxZDk1Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNSIgY3k9Ijg1IiByPSIyNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE0MCIgY3k9IjIwMCIgcj0iNDAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyNTUiIGN5PSI1NSIgcj0iMzQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMTAiIGN5PSIxNzAiIHI9IjI5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMyIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij53aG9sZXNvbWUgKyByZXRyby1maWxtPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "chaotic",
+            "neon"
+          ],
+          "score": 5.8,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMDUiIGN5PSIxMjUiIHI9IjQ3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTYwIiBjeT0iODAiIHI9IjQyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTE1IiBjeT0iMzUiIHI9IjQ2IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNzAiIGN5PSIyNTAiIHI9IjM0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jaGFvdGljICsgbmVvbjwvdGV4dD48L3N2Zz4="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 12,
+      "policy": {
+        "90s": 0.147,
+        "high-school": 0.019,
+        "emo": 0.019,
+        "rock-and-roll": 0.019,
+        "comedy": 0.402,
+        "dark": 0.019,
+        "dance-challenge": 0.261,
+        "slow-mo": 0.03,
+        "neon": 0.026,
+        "retro-film": 0.019,
+        "wholesome": 0.019,
+        "chaotic": 0.019
+      },
+      "best_score": 7.8,
+      "avg_score": 7,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "comedy",
+            "dance-challenge"
+          ],
+          "score": 7.8,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWY0NDQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2YxZDFkIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxOTkiIGN5PSIxMSIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMTYiIGN5PSIxODgiIHI9IjM5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMzMiIGN5PSIxMDUiIHI9IjMzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjEwIiBjeT0iMjIiIHI9IjQ5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2U8L3RleHQ+PC9zdmc+",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDZiNmQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGU3NDkwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMDYiIGN5PSIxNCIgcj0iNTQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMjQiIGN5PSIxOTIiIHI9IjM5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNDIiIGN5PSIxMTAiIHI9IjMzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjIwIiBjeT0iMjgiIHI9IjQ5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYyPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2U8L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "90s",
+            "wholesome"
+          ],
+          "score": 7.1,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxODEiIGN5PSIxODkiIHI9IjQzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjQ0IiBjeT0iMjUyIiByPSIzOCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjQ3IiBjeT0iNTUiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTEwIiBjeT0iMTE4IiByPSI0MSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMSB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+OTBzICsgd2hvbGVzb21lPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "chaotic",
+            "neon"
+          ],
+          "score": 6.9,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxMCIgY3k9IjE5MCIgcj0iNDYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxNjAiIGN5PSI4MCIgcj0iMzAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI1MCIgY3k9IjIzMCIgcj0iNTIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSIxMjAiIHI9IjM5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMyIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jaGFvdGljICsgbmVvbjwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "high-school",
+            "slow-mo"
+          ],
+          "score": 6.3,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxMzEiIGN5PSIxOSIgcj0iNDEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMjQiIGN5PSIxMTIiIHI9IjUwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNTciIGN5PSIyMDUiIHI9IjU1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iMzgiIHI9IjQ3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5oaWdoLXNjaG9vbCArIHNsb3ctbW88L3RleHQ+PC9zdmc+"
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 13,
+      "policy": {
+        "90s": 0.141,
+        "high-school": 0.019,
+        "emo": 0.019,
+        "rock-and-roll": 0.019,
+        "comedy": 0.419,
+        "dark": 0.019,
+        "dance-challenge": 0.262,
+        "slow-mo": 0.025,
+        "neon": 0.022,
+        "retro-film": 0.019,
+        "wholesome": 0.019,
+        "chaotic": 0.019
+      },
+      "best_score": 8,
+      "avg_score": 7,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "comedy",
+            "dance-challenge",
+            "90s"
+          ],
+          "score": 8,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWM0ODk5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjODMxODQzIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI2NyIgY3k9IjEwMyIgcj0iMzciIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODgiIGN5PSIyMjQiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNDkiIGN5PSI4NSIgcj0iMjkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxNzAiIGN5PSIyMDYiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2UgKyA5MHM8L3RleHQ+PC9zdmc+",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI3NCIgY3k9IjEwNiIgcj0iMzgiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxOTYiIGN5PSIyMjgiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNTgiIGN5PSI5MCIgcj0iMjkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODAiIGN5PSIyMTIiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYyPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2UgKyA5MHM8L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "comedy",
+            "neon"
+          ],
+          "score": 7.1,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI5MSIgY3k9IjM5IiByPSIyOSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEwNCIgY3k9IjUyIiByPSIzNiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjExNyIgY3k9IjY1IiByPSIyOSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEzMCIgY3k9Ijc4IiByPSI0OCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMSB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgbmVvbjwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "high-school",
+            "slow-mo"
+          ],
+          "score": 6.4,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxMDIiIGN5PSIxMTgiIHI9IjQyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjI4IiBjeT0iMjQ0IiByPSIzNCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9Ijk0IiBjeT0iMTEwIiByPSI0NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjIyMCIgY3k9IjIzNiIgcj0iNDIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzIgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmhpZ2gtc2Nob29sICsgc2xvdy1tbzwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "rock-and-roll",
+            "dark"
+          ],
+          "score": 6.4,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjODRjYzE2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2Y2MjEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNDUiIGN5PSIxMDUiIHI9IjQ3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjAiIGN5PSIxNDAiIHI9IjM4IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNTUiIGN5PSIxNzUiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iOTAiIGN5PSIyMTAiIHI9IjI5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5yb2NrLWFuZC1yb2xsICsgZGFyazwvdGV4dD48L3N2Zz4="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 14,
+      "policy": {
+        "90s": 0.134,
+        "high-school": 0.018,
+        "emo": 0.018,
+        "rock-and-roll": 0.018,
+        "comedy": 0.434,
+        "dark": 0.018,
+        "dance-challenge": 0.262,
+        "slow-mo": 0.021,
+        "neon": 0.018,
+        "retro-film": 0.018,
+        "wholesome": 0.018,
+        "chaotic": 0.018
+      },
+      "best_score": 8.2,
+      "avg_score": 7.2,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "comedy",
+            "90s"
+          ],
+          "score": 8.2,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjODRjYzE2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2Y2MjEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNTQiIGN5PSIxNDYiIHI9IjQ2IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjE2IiBjeT0iMTA4IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE3OCIgY3k9IjcwIiByPSI1NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE0MCIgY3k9IjMyIiByPSI0NyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMCB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgOTBzPC90ZXh0Pjwvc3ZnPg==",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMWUzYThhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNDciIGN5PSIxNDMiIHI9IjQ1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjA4IiBjeT0iMTA0IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE2OSIgY3k9IjY1IiByPSI1NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEzMCIgY3k9IjI2IiByPSI0NyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMCB2MjwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgOTBzPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "dance-challenge",
+            "slow-mo"
+          ],
+          "score": 7.5,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDZiNmQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGU3NDkwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI1IiBjeT0iMjI1IiByPSIyNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjgwIiBjeT0iNDAiIHI9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTU1IiBjeT0iMTE1IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjIzMCIgY3k9IjE5MCIgcj0iMzAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzEgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIHNsb3ctbW88L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "rock-and-roll",
+            "dark"
+          ],
+          "score": 6.7,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjODRjYzE2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2Y2MjEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMzAiIGN5PSIyMTAiIHI9IjQ2IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNDAiIGN5PSIyMCIgcj0iNTAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMTAiIGN5PSI5MCIgcj0iMzEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODAiIGN5PSIxNjAiIHI9IjQwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMyIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5yb2NrLWFuZC1yb2xsICsgZGFyazwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "retro-film",
+            "emo"
+          ],
+          "score": 6.3,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWY0NDQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2YxZDFkIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNTAiIGN5PSI3MCIgcj0iMjYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxODAiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjEwIiBjeT0iMzAiIHI9IjQzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNjAiIGN5PSIxNDAiIHI9IjU0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5yZXRyby1maWxtICsgZW1vPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 15,
+      "policy": {
+        "90s": 0.127,
+        "high-school": 0.018,
+        "emo": 0.018,
+        "rock-and-roll": 0.018,
+        "comedy": 0.448,
+        "dark": 0.018,
+        "dance-challenge": 0.261,
+        "slow-mo": 0.018,
+        "neon": 0.018,
+        "retro-film": 0.018,
+        "wholesome": 0.018,
+        "chaotic": 0.018
+      },
+      "best_score": 8.4,
+      "avg_score": 7.4,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "dance-challenge",
+            "90s"
+          ],
+          "score": 8.4,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMzYiIGN5PSI2NCIgcj0iMzYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI4NCIgY3k9IjE3MiIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxOTIiIGN5PSIyMCIgcj0iMzEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI0MCIgY3k9IjEyOCIgcj0iNDAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzAgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIDkwczwvdGV4dD48L3N2Zz4=",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMWUzYThhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMjkiIGN5PSI2MSIgcj0iMzUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI3NiIgY3k9IjE2OCIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODMiIGN5PSIxNSIgcj0iMzEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIzMCIgY3k9IjEyMiIgcj0iNDAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzAgdjI8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIDkwczwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "90s",
+            "comedy"
+          ],
+          "score": 7.7,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxNjMiIGN5PSIxMDciIHI9IjMzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTEyIiBjeT0iNTYiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNjEiIGN5PSI1IiByPSIzMyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEwIiBjeT0iMjE0IiByPSI0OSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMSB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+OTBzICsgY29tZWR5PC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "retro-film",
+            "emo"
+          ],
+          "score": 6.9,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWY0NDQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2YxZDFkIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMjkiIGN5PSI2MSIgcj0iMjciIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI3NiIgY3k9IjE2OCIgcj0iMjQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODMiIGN5PSIxNSIgcj0iNTIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIzMCIgY3k9IjEyMiIgcj0iMzkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzIgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPnJldHJvLWZpbG0gKyBlbW88L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "emo",
+            "dark"
+          ],
+          "score": 6.7,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxMDkiIGN5PSIxMjEiIHI9IjM1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjM2IiBjeT0iMjQ4IiByPSI0OSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEwMyIgY3k9IjExNSIgcj0iNTUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMzAiIGN5PSIyNDIiIHI9IjM1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5lbW8gKyBkYXJrPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 16,
+      "policy": {
+        "90s": 0.12,
+        "high-school": 0.018,
+        "emo": 0.018,
+        "rock-and-roll": 0.018,
+        "comedy": 0.46,
+        "dark": 0.018,
+        "dance-challenge": 0.259,
+        "slow-mo": 0.018,
+        "neon": 0.018,
+        "retro-film": 0.018,
+        "wholesome": 0.018,
+        "chaotic": 0.018
+      },
+      "best_score": 8.6,
+      "avg_score": 7.8,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "comedy",
+            "dance-challenge"
+          ],
+          "score": 8.6,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWY0NDQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2YxZDFkIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxOTkiIGN5PSIxMSIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMTYiIGN5PSIxODgiIHI9IjM5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMzMiIGN5PSIxMDUiIHI9IjMzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjEwIiBjeT0iMjIiIHI9IjQ5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2U8L3RleHQ+PC9zdmc+",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDZiNmQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGU3NDkwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMDYiIGN5PSIxNCIgcj0iNTQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMjQiIGN5PSIxOTIiIHI9IjM5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNDIiIGN5PSIxMTAiIHI9IjMzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjIwIiBjeT0iMjgiIHI9IjQ5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYyPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2U8L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "90s",
+            "wholesome"
+          ],
+          "score": 7.8,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxODEiIGN5PSIxODkiIHI9IjQzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjQ0IiBjeT0iMjUyIiByPSIzOCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjQ3IiBjeT0iNTUiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTEwIiBjeT0iMTE4IiByPSI0MSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMSB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+OTBzICsgd2hvbGVzb21lPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "emo",
+            "dark"
+          ],
+          "score": 7.6,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI1NCIgY3k9IjI0NiIgcj0iMzQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMzYiIGN5PSI2OCIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMTgiIGN5PSIxNTAiIHI9IjI3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNDAiIGN5PSIyMzIiIHI9IjI4IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMyIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5lbW8gKyBkYXJrPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "wholesome",
+            "retro-film"
+          ],
+          "score": 7.3,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNGMxZDk1Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxNDQiIGN5PSIxMzYiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTYiIGN5PSI4IiByPSIyNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE0OCIgY3k9IjE0MCIgcj0iMjQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjEyIiByPSI0OCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMyB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+d2hvbGVzb21lICsgcmV0cm8tZmlsbTwvdGV4dD48L3N2Zz4="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 17,
+      "policy": {
+        "90s": 0.113,
+        "high-school": 0.018,
+        "emo": 0.018,
+        "rock-and-roll": 0.018,
+        "comedy": 0.472,
+        "dark": 0.018,
+        "dance-challenge": 0.256,
+        "slow-mo": 0.018,
+        "neon": 0.018,
+        "retro-film": 0.018,
+        "wholesome": 0.018,
+        "chaotic": 0.018
+      },
+      "best_score": 8.8,
+      "avg_score": 8,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "comedy",
+            "dance-challenge",
+            "90s"
+          ],
+          "score": 8.8,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWM0ODk5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjODMxODQzIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI2NyIgY3k9IjEwMyIgcj0iMzciIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODgiIGN5PSIyMjQiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNDkiIGN5PSI4NSIgcj0iMjkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxNzAiIGN5PSIyMDYiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2UgKyA5MHM8L3RleHQ+PC9zdmc+",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI3NCIgY3k9IjEwNiIgcj0iMzgiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxOTYiIGN5PSIyMjgiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNTgiIGN5PSI5MCIgcj0iMjkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODAiIGN5PSIyMTIiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYyPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2UgKyA5MHM8L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "comedy",
+            "neon"
+          ],
+          "score": 8.1,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI5MSIgY3k9IjM5IiByPSIyOSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEwNCIgY3k9IjUyIiByPSIzNiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjExNyIgY3k9IjY1IiByPSIyOSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEzMCIgY3k9Ijc4IiByPSI0OCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMSB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgbmVvbjwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "wholesome",
+            "retro-film"
+          ],
+          "score": 7.9,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNGMxZDk1Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNSIgY3k9Ijg1IiByPSIyNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE0MCIgY3k9IjIwMCIgcj0iNDAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyNTUiIGN5PSI1NSIgcj0iMzQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMTAiIGN5PSIxNzAiIHI9IjI5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMyIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij53aG9sZXNvbWUgKyByZXRyby1maWxtPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "chaotic",
+            "neon"
+          ],
+          "score": 7.3,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMDUiIGN5PSIxMjUiIHI9IjQ3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTYwIiBjeT0iODAiIHI9IjQyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTE1IiBjeT0iMzUiIHI9IjQ2IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNzAiIGN5PSIyNTAiIHI9IjM0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jaGFvdGljICsgbmVvbjwvdGV4dD48L3N2Zz4="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 18,
+      "policy": {
+        "90s": 0.106,
+        "high-school": 0.018,
+        "emo": 0.018,
+        "rock-and-roll": 0.018,
+        "comedy": 0.483,
+        "dark": 0.018,
+        "dance-challenge": 0.253,
+        "slow-mo": 0.018,
+        "neon": 0.018,
+        "retro-film": 0.018,
+        "wholesome": 0.018,
+        "chaotic": 0.018
+      },
+      "best_score": 9,
+      "avg_score": 8,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "comedy",
+            "90s"
+          ],
+          "score": 9,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjODRjYzE2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2Y2MjEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNTQiIGN5PSIxNDYiIHI9IjQ2IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjE2IiBjeT0iMTA4IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE3OCIgY3k9IjcwIiByPSI1NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE0MCIgY3k9IjMyIiByPSI0NyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMCB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgOTBzPC90ZXh0Pjwvc3ZnPg==",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMWUzYThhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNDciIGN5PSIxNDMiIHI9IjQ1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjA4IiBjeT0iMTA0IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE2OSIgY3k9IjY1IiByPSI1NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEzMCIgY3k9IjI2IiByPSI0NyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMCB2MjwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgOTBzPC90ZXh0Pjwvc3ZnPg==",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNDAiIGN5PSIxNDAiIHI9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjAwIiBjeT0iMTAwIiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE2MCIgY3k9IjYwIiByPSI1NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEyMCIgY3k9IjIwIiByPSI0NyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMCB2MzwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgOTBzPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "dance-challenge",
+            "slow-mo"
+          ],
+          "score": 7.9,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDZiNmQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGU3NDkwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI1IiBjeT0iMjI1IiByPSIyNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjgwIiBjeT0iNDAiIHI9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTU1IiBjeT0iMTE1IiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjIzMCIgY3k9IjE5MCIgcj0iMzAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzEgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIHNsb3ctbW88L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "chaotic",
+            "neon"
+          ],
+          "score": 7.9,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxMCIgY3k9IjE5MCIgcj0iNDYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxNjAiIGN5PSI4MCIgcj0iMzAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI1MCIgY3k9IjIzMCIgcj0iNTIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSIxMjAiIHI9IjM5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMyIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jaGFvdGljICsgbmVvbjwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "high-school",
+            "slow-mo"
+          ],
+          "score": 7.9,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxMzEiIGN5PSIxOSIgcj0iNDEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMjQiIGN5PSIxMTIiIHI9IjUwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNTciIGN5PSIyMDUiIHI9IjU1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iMzgiIHI9IjQ3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5oaWdoLXNjaG9vbCArIHNsb3ctbW88L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s4",
+          "elements": [
+            "rock-and-roll",
+            "dark"
+          ],
+          "score": 7.1,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjODRjYzE2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2Y2MjEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIwIiBjeT0iMCIgcj0iNDgiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIwIiBjeT0iMCIgcj0iMjciIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIwIiBjeT0iMCIgcj0iNDQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIwIiBjeT0iMCIgcj0iNTAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzQgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPnJvY2stYW5kLXJvbGwgKyBkYXJrPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 19,
+      "policy": {
+        "90s": 0.1,
+        "high-school": 0.017,
+        "emo": 0.017,
+        "rock-and-roll": 0.017,
+        "comedy": 0.494,
+        "dark": 0.017,
+        "dance-challenge": 0.249,
+        "slow-mo": 0.017,
+        "neon": 0.017,
+        "retro-film": 0.017,
+        "wholesome": 0.017,
+        "chaotic": 0.017
+      },
+      "best_score": 9.2,
+      "avg_score": 8.1,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "dance-challenge",
+            "90s"
+          ],
+          "score": 9.2,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMzYiIGN5PSI2NCIgcj0iMzYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI4NCIgY3k9IjE3MiIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxOTIiIGN5PSIyMCIgcj0iMzEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI0MCIgY3k9IjEyOCIgcj0iNDAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzAgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIDkwczwvdGV4dD48L3N2Zz4=",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMWUzYThhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMjkiIGN5PSI2MSIgcj0iMzUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI3NiIgY3k9IjE2OCIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODMiIGN5PSIxNSIgcj0iMzEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIzMCIgY3k9IjEyMiIgcj0iNDAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzAgdjI8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIDkwczwvdGV4dD48L3N2Zz4=",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjODRjYzE2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2Y2MjEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMjIiIGN5PSI1OCIgcj0iMzQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSI2OCIgY3k9IjE2NCIgcj0iNTMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxNzQiIGN5PSIxMCIgcj0iMzEiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjExNiIgcj0iNDAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzAgdjM8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmRhbmNlLWNoYWxsZW5nZSArIDkwczwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "90s",
+            "comedy"
+          ],
+          "score": 8.3,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxNjMiIGN5PSIxMDciIHI9IjMzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTEyIiBjeT0iNTYiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNjEiIGN5PSI1IiByPSIzMyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEwIiBjeT0iMjE0IiByPSI0OSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMSB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+OTBzICsgY29tZWR5PC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "high-school",
+            "slow-mo"
+          ],
+          "score": 8.2,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxMDIiIGN5PSIxMTgiIHI9IjQyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjI4IiBjeT0iMjQ0IiByPSIzNCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9Ijk0IiBjeT0iMTEwIiByPSI0NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjIyMCIgY3k9IjIzNiIgcj0iNDIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48cmVjdCB5PSIxODIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNzgiIGZpbGw9IiMwMDAiIG9wYWNpdHk9IjAuMjgiLz48dGV4dCB4PSIxNiIgeT0iMjE0IiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+UzIgdjE8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIG9wYWNpdHk9IjAuODUiPmhpZ2gtc2Nob29sICsgc2xvdy1tbzwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "rock-and-roll",
+            "dark"
+          ],
+          "score": 7.6,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjODRjYzE2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2Y2MjEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNDUiIGN5PSIxMDUiIHI9IjQ3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjAiIGN5PSIxNDAiIHI9IjM4IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNTUiIGN5PSIxNzUiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iOTAiIGN5PSIyMTAiIHI9IjI5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5yb2NrLWFuZC1yb2xsICsgZGFyazwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s4",
+          "elements": [
+            "retro-film",
+            "emo"
+          ],
+          "score": 7.3,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWY0NDQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2YxZDFkIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNDkiIGN5PSIxODEiIHI9IjU1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTM2IiBjeT0iNjgiIHI9IjMxIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjMiIGN5PSIyMTUiIHI9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTcwIiBjeT0iMTAyIiByPSI0MiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TNCB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+cmV0cm8tZmlsbSArIGVtbzwvdGV4dD48L3N2Zz4="
+          ]
+        }
+      ]
+    },
+    {
+      "iter": 20,
+      "policy": {
+        "90s": 0.094,
+        "high-school": 0.017,
+        "emo": 0.017,
+        "rock-and-roll": 0.017,
+        "comedy": 0.504,
+        "dark": 0.017,
+        "dance-challenge": 0.245,
+        "slow-mo": 0.017,
+        "neon": 0.017,
+        "retro-film": 0.017,
+        "wholesome": 0.017,
+        "chaotic": 0.017
+      },
+      "best_score": 9.4,
+      "avg_score": 8.4,
+      "sets": [
+        {
+          "id": "s0",
+          "elements": [
+            "comedy",
+            "dance-challenge",
+            "90s"
+          ],
+          "score": 9.4,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWM0ODk5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjODMxODQzIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI2NyIgY3k9IjEwMyIgcj0iMzciIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODgiIGN5PSIyMjQiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNDkiIGN5PSI4NSIgcj0iMjkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxNzAiIGN5PSIyMDYiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2UgKyA5MHM8L3RleHQ+PC9zdmc+",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2MyZDEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI3NCIgY3k9IjEwNiIgcj0iMzgiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxOTYiIGN5PSIyMjgiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNTgiIGN5PSI5MCIgcj0iMjkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxODAiIGN5PSIyMTIiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYyPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2UgKyA5MHM8L3RleHQ+PC9zdmc+",
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNGMxZDk1Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI4MSIgY3k9IjEwOSIgcj0iMzkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyMDQiIGN5PSIyMzIiIHI9IjM3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNjciIGN5PSI5NSIgcj0iMjkiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxOTAiIGN5PSIyMTgiIHI9IjUyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMwIHYzPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jb21lZHkgKyBkYW5jZS1jaGFsbGVuZ2UgKyA5MHM8L3RleHQ+PC9zdmc+"
+          ]
+        },
+        {
+          "id": "s1",
+          "elements": [
+            "comedy",
+            "neon"
+          ],
+          "score": 8.5,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSI5MSIgY3k9IjM5IiByPSIyOSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEwNCIgY3k9IjUyIiByPSIzNiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjExNyIgY3k9IjY1IiByPSIyOSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjEzMCIgY3k9Ijc4IiByPSI0OCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxyZWN0IHk9IjE4MiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3OCIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4yOCIvPjx0ZXh0IHg9IjE2IiB5PSIyMTQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5TMSB2MTwvdGV4dD48dGV4dCB4PSIxNiIgeT0iMjQwIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC44NSI+Y29tZWR5ICsgbmVvbjwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s2",
+          "elements": [
+            "wholesome",
+            "retro-film"
+          ],
+          "score": 8.4,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNGMxZDk1Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyNSIgY3k9Ijg1IiByPSIyNyIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjE0MCIgY3k9IjIwMCIgcj0iNDAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIyNTUiIGN5PSI1NSIgcj0iMzQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMTYiLz48Y2lyY2xlIGN4PSIxMTAiIGN5PSIxNzAiIHI9IjI5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMyIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij53aG9sZXNvbWUgKyByZXRyby1maWxtPC90ZXh0Pjwvc3ZnPg=="
+          ]
+        },
+        {
+          "id": "s3",
+          "elements": [
+            "chaotic",
+            "neon"
+          ],
+          "score": 8.4,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIyMDUiIGN5PSIxMjUiIHI9IjQ3IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTYwIiBjeT0iODAiIHI9IjQyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMTE1IiBjeT0iMzUiIHI9IjQ2IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iNzAiIGN5PSIyNTAiIHI9IjM0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlMzIHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5jaGFvdGljICsgbmVvbjwvdGV4dD48L3N2Zz4="
+          ]
+        },
+        {
+          "id": "s4",
+          "elements": [
+            "high-school",
+            "slow-mo"
+          ],
+          "score": 7.4,
+          "coherent": true,
+          "images": [
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDY1ZjQ2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjI2MCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxNjAiIGN5PSIxODAiIHI9IjQwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iMjIwIiBjeT0iMjQwIiByPSIzNCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC4xNiIvPjxjaXJjbGUgY3g9IjIwIiBjeT0iNDAiIHI9IjMzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PGNpcmNsZSBjeD0iODAiIGN5PSIxMDAiIHI9IjUzIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHJlY3QgeT0iMTgyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9Ijc4IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIwLjI4Ii8+PHRleHQgeD0iMTYiIHk9IjIxNCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiPlM0IHYxPC90ZXh0Pjx0ZXh0IHg9IjE2IiB5PSIyNDAiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBvcGFjaXR5PSIwLjg1Ij5oaWdoLXNjaG9vbCArIHNsb3ctbW88L3RleHQ+PC9zdmc+"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Self-Improving Loop — Live Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#0B0E13;
+    --bg2:#0F141B;
+    --panel:#151B24;
+    --panel2:#1A222D;
+    --line:#26303D;
+    --txt:#E7EEF6;
+    --muted:#8A97A6;
+    --dim:#5C6878;
+    --green:#3FE08A;
+    --green-d:#1f7d4d;
+    --blue:#5AA9FF;
+    --amber:#F2C14E;
+    --red:#FF6B6B;
+    --violet:#B388FF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    background:
+      radial-gradient(1200px 700px at 80% -10%, #14202e 0%, transparent 60%),
+      var(--bg);
+    color:var(--txt);
+    font-family:'Space Grotesk',system-ui,sans-serif;
+    overflow:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:'JetBrains Mono',monospace;}
+
+  #app{height:100vh;display:grid;grid-template-columns:1fr;grid-template-rows:1fr;gap:14px;padding:16px 20px 18px;}
+  #app.has-rail{grid-template-columns:1fr 340px;}
+  .main{display:flex;flex-direction:column;gap:14px;min-height:0;min-width:0;}
+  .main .mid{flex:1;}
+
+  /* ---------------- ALARM BANNER ---------------- */
+  .alarm{display:none;align-items:center;gap:14px;background:linear-gradient(90deg,rgba(255,107,107,.26),rgba(255,107,107,.06));border:1px solid var(--red);border-left:6px solid var(--red);border-radius:14px;padding:13px 18px;animation:alarmpulse 1.6s ease-in-out infinite;}
+  .alarm.show{display:flex;}
+  .alarm .abolt{font-size:26px;line-height:1;filter:drop-shadow(0 0 6px rgba(255,107,107,.6));}
+  .alarm .atxt{flex:1;font-size:19px;font-weight:700;color:#ffd2d2;letter-spacing:.2px;}
+  .alarm .ax{cursor:pointer;background:transparent;border:1px solid rgba(255,107,107,.5);color:#ffb3b3;border-radius:8px;width:30px;height:30px;font-size:14px;font-weight:700;transition:.15s;}
+  .alarm .ax:hover{background:rgba(255,107,107,.18);color:#fff;}
+  @keyframes alarmpulse{0%,100%{box-shadow:0 0 0 0 rgba(255,107,107,0)}50%{box-shadow:0 0 22px -4px rgba(255,107,107,.55)}}
+
+  /* ---------------- RAINDROP RAIL ---------------- */
+  .railpanel{padding:14px 14px 12px;}
+  .railpanel .ptitle{margin-bottom:10px;}
+  .wsbtn{text-decoration:none;}
+  .feed{flex:1;min-height:0;overflow-y:auto;display:flex;flex-direction:column;gap:8px;padding-right:4px;}
+  .feed::-webkit-scrollbar{width:8px;}
+  .feed::-webkit-scrollbar-thumb{background:var(--line);border-radius:999px;}
+  .evrow{display:flex;gap:10px;padding:9px 11px;border-radius:10px;background:#0e131a;border:1px solid var(--line);border-left:3px solid var(--line);}
+  .evrow .evi{font-size:13px;line-height:1.4;color:var(--dim);}
+  .evrow .evbody{min-width:0;flex:1;}
+  .evrow .evtop{display:flex;align-items:baseline;gap:8px;margin-bottom:2px;}
+  .evrow .evlabel{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:13px;color:var(--txt);}
+  .evrow .eviter{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim);margin-left:auto;}
+  .evrow .evdetail{font-size:12.5px;color:var(--muted);line-height:1.35;}
+  .evrow.warn{border-left-color:var(--red);background:rgba(255,107,107,.07);}
+  .evrow.warn .evi{color:var(--red);}
+  .evrow.warn .evlabel{color:#ffb9b9;}
+  .evrow.alarm-ev{border-color:rgba(255,107,107,.5);border-left-color:var(--red);background:rgba(255,107,107,.12);}
+  .evrow.alarm-ev .evi{color:var(--red);}
+  .evrow.alarm-ev .evlabel{color:#ff8f8f;}
+
+  /* ---------------- HEADER ---------------- */
+  header{
+    display:flex;align-items:center;gap:22px;
+    background:linear-gradient(180deg,var(--panel),var(--bg2));
+    border:1px solid var(--line);border-radius:16px;padding:14px 22px;
+  }
+  .brand{display:flex;flex-direction:column;gap:3px;min-width:230px;}
+  .brand .kick{font-size:12px;letter-spacing:3px;color:var(--green);font-weight:600;text-transform:uppercase;}
+  .brand h1{font-size:23px;font-weight:700;letter-spacing:.3px;line-height:1;}
+  .brand .vert{font-size:13px;color:var(--muted);margin-top:2px;}
+  .brand .vert b{color:var(--txt);}
+
+  .trending{flex:1;display:flex;flex-direction:column;gap:7px;}
+  .trending .lab{font-size:11px;letter-spacing:2px;color:var(--dim);text-transform:uppercase;}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:500;
+    background:var(--panel2);border:1px solid var(--line);color:var(--txt);
+    padding:5px 12px;border-radius:999px;display:inline-flex;align-items:center;gap:7px;
+  }
+  .chip::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--violet);}
+
+  .counter{display:flex;align-items:center;gap:18px;}
+  .iterbox{text-align:right;}
+  .iterbox .lab{font-size:11px;letter-spacing:3px;color:var(--dim);text-transform:uppercase;}
+  .iterbox .n{font-size:62px;font-weight:700;line-height:.85;font-family:'JetBrains Mono',monospace;}
+  .iterbox .n .of{color:var(--dim);font-size:26px;}
+  .livedot{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--green);font-weight:600;letter-spacing:1px;}
+  .livedot .d{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 0 0 var(--green);animation:pulse 1.4s infinite;}
+  .livedot.stale{color:var(--amber);}
+  .livedot.stale .d{background:var(--amber);animation:none;}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(63,224,138,.55)}70%{box-shadow:0 0 0 10px rgba(63,224,138,0)}100%{box-shadow:0 0 0 0 rgba(63,224,138,0)}}
+
+  /* ---------------- MIDDLE: charts ---------------- */
+  .mid{display:grid;grid-template-columns:1.55fr 1fr;gap:14px;min-height:0;}
+  .panel{
+    background:linear-gradient(180deg,var(--panel),var(--bg2));
+    border:1px solid var(--line);border-radius:16px;padding:14px 18px 10px;
+    display:flex;flex-direction:column;min-height:0;position:relative;
+  }
+  .panel .ptitle{display:flex;align-items:baseline;gap:12px;margin-bottom:6px;}
+  .panel .ptitle h2{font-size:17px;font-weight:600;letter-spacing:.3px;}
+  .panel .ptitle .hint{font-size:12px;color:var(--muted);}
+  .panel .ptitle .spacer{flex:1;}
+  .legendpill{font-size:11px;color:var(--muted);font-family:'JetBrains Mono',monospace;display:inline-flex;align-items:center;gap:6px;}
+  .legendpill .sw{width:14px;height:4px;border-radius:2px;display:inline-block;}
+  .canvas-wrap{position:relative;flex:1;min-height:0;}
+  canvas{position:absolute;inset:0;}
+
+  .topline{position:absolute;top:14px;right:18px;text-align:right;}
+  .topline .big{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:30px;line-height:1;}
+  .topline .lab{font-size:11px;letter-spacing:2px;color:var(--dim);text-transform:uppercase;}
+
+  /* ---------------- BOTTOM: image wall ---------------- */
+  .wall{
+    background:linear-gradient(180deg,var(--panel),var(--bg2));
+    border:1px solid var(--line);border-radius:16px;padding:12px 16px 14px;
+    display:flex;flex-direction:column;gap:10px;height:280px;
+  }
+  .wall .whead{display:flex;align-items:center;gap:12px;}
+  .wall .whead h2{font-size:16px;font-weight:600;}
+  .wall .whead .hint{font-size:12px;color:var(--muted);}
+  .wall .whead .spacer{flex:1;}
+  .replaybtn{
+    cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.5px;
+    background:var(--panel2);border:1px solid var(--line);color:var(--txt);
+    padding:7px 14px;border-radius:9px;display:inline-flex;align-items:center;gap:7px;transition:.15s;
+  }
+  .replaybtn:hover{border-color:var(--green);color:var(--green);}
+  .replaybtn.armed{background:var(--green);color:#08130c;border-color:var(--green);}
+
+  .setrow{display:flex;gap:14px;overflow-x:auto;overflow-y:hidden;flex:1;padding:4px 2px 8px;}
+  .setrow::-webkit-scrollbar{height:9px;}
+  .setrow::-webkit-scrollbar-thumb{background:var(--line);border-radius:999px;}
+  .setrow::-webkit-scrollbar-track{background:transparent;}
+
+  .setcard{
+    flex:0 0 auto;background:var(--panel2);border:2px solid var(--line);border-radius:14px;
+    padding:10px;display:flex;flex-direction:column;gap:9px;transition:border-color .25s, opacity .25s, transform .25s;
+    min-width:170px;
+  }
+  .setcard .imgs{display:flex;gap:7px;}
+  .setcard .imgs img{width:84px;height:84px;border-radius:8px;object-fit:cover;display:block;background:#0a0d12;border:1px solid rgba(255,255,255,.06);}
+  .setcard .imgph{width:84px;height:84px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:10px;background:repeating-linear-gradient(45deg,#11161d 0 7px,#0d1218 7px 14px);border:1px solid var(--line);text-align:center;}
+  .setcard .meta{display:flex;align-items:center;gap:9px;}
+  .setcard .score{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:26px;line-height:1;}
+  .setcard .sid{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--dim);}
+  .setcard .tags{display:flex;flex-wrap:wrap;gap:5px;}
+  .setcard .tag{font-size:11px;font-family:'JetBrains Mono',monospace;background:#0e131a;border:1px solid var(--line);color:var(--muted);padding:2px 8px;border-radius:6px;}
+  .setcard .status{margin-left:auto;font-size:10px;font-weight:700;letter-spacing:1px;padding:3px 8px;border-radius:6px;text-transform:uppercase;font-family:'JetBrains Mono',monospace;}
+
+  .setcard.winner{border-color:var(--green);box-shadow:0 0 0 1px var(--green), 0 10px 30px -12px rgba(63,224,138,.5);}
+  .setcard.winner .score{color:var(--green);}
+  .setcard.winner .status{background:rgba(63,224,138,.16);color:var(--green);}
+  .setcard.reject{border-color:rgba(255,107,107,.55);opacity:.5;}
+  .setcard.reject .score{color:var(--red);}
+  .setcard.reject .status{background:rgba(255,107,107,.16);color:var(--red);}
+  .setcard.ok .status{background:#0e131a;color:var(--muted);}
+
+  /* ---------------- WAITING OVERLAY ---------------- */
+  #waiting{position:fixed;inset:0;z-index:30;display:none;flex-direction:column;align-items:center;justify-content:center;gap:20px;background:var(--bg);}
+  #waiting.show{display:flex;}
+  #waiting .spin{width:54px;height:54px;border:5px solid var(--line);border-top-color:var(--green);border-radius:50%;animation:spin 1s linear infinite;}
+  #waiting .msg{font-size:26px;font-weight:600;}
+  #waiting .sub{font-size:14px;color:var(--muted);font-family:'JetBrains Mono',monospace;}
+  @keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="main">
+  <!-- ALARM BANNER -->
+  <div class="alarm" id="alarm">
+    <span class="abolt">⚠</span>
+    <span class="atxt" id="alarmTxt"></span>
+    <button class="ax" id="alarmDismiss" title="acknowledge">✕</button>
+  </div>
+  <!-- HEADER -->
+  <header>
+    <div class="brand">
+      <span class="kick">Self-Improving Loop</span>
+      <h1>Policy Trainer</h1>
+      <span class="vert">vertical: <b id="vertical">—</b></span>
+    </div>
+    <div class="trending">
+      <span class="lab">Trending now</span>
+      <div class="chips" id="chips"></div>
+    </div>
+    <div class="counter">
+      <div class="iterbox">
+        <div class="lab">Iteration</div>
+        <div class="n"><span id="iterN">0</span><span class="of" id="iterOf"></span></div>
+      </div>
+      <div class="livedot" id="livedot"><span class="d"></span><span id="liveTxt">LIVE</span></div>
+    </div>
+  </header>
+
+  <!-- MIDDLE -->
+  <div class="mid">
+    <div class="panel">
+      <div class="ptitle">
+        <h2>Policy distribution</h2>
+        <span class="hint">weight per creative element — watch it concentrate</span>
+        <span class="spacer"></span>
+        <span class="legendpill"><span class="sw" style="background:var(--green)"></span>now</span>
+        <span class="legendpill"><span class="sw" style="background:#46505f"></span>iter 0</span>
+      </div>
+      <div class="canvas-wrap"><canvas id="policyChart"></canvas></div>
+    </div>
+    <div class="panel">
+      <div class="ptitle">
+        <h2>Score climbing</h2>
+        <span class="hint">per iteration</span>
+      </div>
+      <div class="topline">
+        <div class="big" id="bestNow" style="color:var(--green)">—</div>
+        <div class="lab">best score</div>
+      </div>
+      <div class="canvas-wrap"><canvas id="scoreChart"></canvas></div>
+    </div>
+  </div>
+
+  <!-- IMAGE WALL -->
+  <div class="wall">
+    <div class="whead">
+      <h2>Candidate sets</h2>
+      <span class="hint" id="wallHint">current iteration · winner highlighted, gibberish rejected</span>
+      <span class="spacer"></span>
+      <button class="replaybtn" id="replayBtn">▶ replay iterations</button>
+    </div>
+    <div class="setrow" id="setrow"></div>
+  </div>
+  </div><!-- /main -->
+
+  <!-- RAINDROP RAIL -->
+  <aside id="rail" class="panel railpanel" style="display:none">
+    <div class="ptitle">
+      <h2>Loop Activity</h2>
+      <span class="spacer"></span>
+      <a class="replaybtn wsbtn" id="wsBtn" href="#" target="_blank" rel="noopener">Open Workshop ↗</a>
+    </div>
+    <div class="feed" id="feed"></div>
+  </aside>
+</div>
+
+<!-- WAITING -->
+<div id="waiting" class="show">
+  <div class="spin"></div>
+  <div class="msg">waiting for first iteration…</div>
+  <div class="sub" id="waitSub">polling state.json every 1s</div>
+</div>
+
+<script>
+/* =====================================================================
+   Live dashboard for the self-improving content loop.
+   Polls state.json every 1s, renders policy + score + image wall.
+   ===================================================================== */
+const ELEMENTS = ["90s","high-school","emo","rock-and-roll","comedy","dark","dance-challenge","slow-mo","neon","retro-film","wholesome","chaotic"];
+const $ = s => document.querySelector(s);
+
+let policyChart, scoreChart;
+let lastGood = null;       // last valid state
+let viewIndex = null;      // null = follow live latest; number = pinned (replay)
+let replaying = false;
+let missCount = 0;
+
+/* ---------- chart setup ---------- */
+function initCharts(){
+  const gridColor = "#1e2732";
+  const tickColor = "#8A97A6";
+  Chart.defaults.font.family = "'JetBrains Mono', monospace";
+  Chart.defaults.font.size = 13;
+  Chart.defaults.color = tickColor;
+
+  policyChart = new Chart($("#policyChart"), {
+    type:"bar",
+    data:{ labels:ELEMENTS, datasets:[
+      { label:"iter 0", data:ELEMENTS.map(()=>0), backgroundColor:"rgba(120,134,150,0.28)",
+        borderRadius:3, grouped:false, barPercentage:0.96, categoryPercentage:0.96, order:2 },
+      { label:"now", data:ELEMENTS.map(()=>0), backgroundColor:ELEMENTS.map(()=>"#5AA9FF"),
+        borderRadius:5, grouped:false, barPercentage:0.6, categoryPercentage:0.96, order:1 }
+    ]},
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      animation:{ duration:650, easing:"easeOutQuart" },
+      plugins:{ legend:{display:false}, tooltip:{ callbacks:{ label:c=>` ${(c.raw*100).toFixed(1)}%` } } },
+      scales:{
+        x:{ grid:{display:false}, ticks:{ maxRotation:60, minRotation:55, color:tickColor, font:{size:12} } },
+        y:{ beginAtZero:true, suggestedMax:0.35, grid:{color:gridColor}, ticks:{ callback:v=>Math.round(v*100)+"%", color:tickColor } }
+      }
+    }
+  });
+
+  scoreChart = new Chart($("#scoreChart"), {
+    type:"line",
+    data:{ labels:[], datasets:[
+      { label:"best", data:[], borderColor:"#3FE08A", backgroundColor:"rgba(63,224,138,0.12)",
+        borderWidth:3.5, tension:0.32, fill:true, pointRadius:5, pointBackgroundColor:"#3FE08A", pointBorderColor:"#0B0E13", pointBorderWidth:2 },
+      { label:"avg", data:[], borderColor:"#5AA9FF", backgroundColor:"rgba(90,169,255,0.08)",
+        borderWidth:3, tension:0.32, fill:true, pointRadius:4.5, pointBackgroundColor:"#5AA9FF", pointBorderColor:"#0B0E13", pointBorderWidth:2, borderDash:[6,4] }
+    ]},
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      animation:{ duration:650, easing:"easeOutQuart" },
+      plugins:{ legend:{ display:true, position:"bottom", labels:{ boxWidth:14, boxHeight:4, color:"#8A97A6", font:{size:13} } } },
+      scales:{
+        x:{ grid:{color:gridColor}, title:{display:true,text:"iteration",color:"#5C6878",font:{size:12}}, ticks:{color:tickColor} },
+        y:{ min:0, max:10, grid:{color:gridColor}, ticks:{color:tickColor, stepSize:2} }
+      }
+    }
+  });
+}
+
+/* ---------- render ---------- */
+function topElements(policy, n){
+  return Object.entries(policy).sort((a,b)=>b[1]-a[1]).slice(0,n).map(e=>e[0]);
+}
+
+function render(state){
+  const its = state.iterations;
+  const idx = (viewIndex==null) ? its.length-1 : Math.min(viewIndex, its.length-1);
+  const cur = its[idx];
+  const iter0 = its[0];
+
+  // header
+  $("#vertical").textContent = state.vertical || "—";
+  $("#chips").innerHTML = (state.trending||[]).map(t=>`<span class="chip">${escapeHtml(t)}</span>`).join("");
+  $("#iterN").textContent = cur.iter;
+  $("#iterOf").textContent = its.length>1 ? " / "+its[its.length-1].iter : "";
+  $("#bestNow").textContent = (cur.best_score!=null?cur.best_score.toFixed(1):"—");
+
+  // policy chart — ghost iter0 + current, top-3 highlighted green
+  const tops = new Set(topElements(cur.policy, 3));
+  policyChart.data.datasets[0].data = ELEMENTS.map(e => iter0.policy[e] ?? 0);
+  policyChart.data.datasets[1].data = ELEMENTS.map(e => cur.policy[e] ?? 0);
+  policyChart.data.datasets[1].backgroundColor = ELEMENTS.map(e => tops.has(e) ? "#3FE08A" : "#3C72B0");
+  policyChart.update();
+
+  // score chart — all iterations up to current view
+  const upto = its.slice(0, idx+1);
+  scoreChart.data.labels = upto.map(i=>i.iter);
+  scoreChart.data.datasets[0].data = upto.map(i=>i.best_score);
+  scoreChart.data.datasets[1].data = upto.map(i=>i.avg_score);
+  scoreChart.update();
+
+  // image wall
+  renderWall(cur);
+
+  // wall hint reflects view mode
+  $("#wallHint").textContent = (viewIndex==null)
+    ? "current iteration · winner highlighted, gibberish rejected"
+    : `replaying iteration ${cur.iter} of ${its[its.length-1].iter}`;
+
+  renderRaindrop(state);
+}
+
+function renderWall(cur){
+  const sets = cur.sets || [];
+  const best = sets.reduce((m,s)=> s.score>m ? s.score : m, -Infinity);
+  $("#setrow").innerHTML = sets.map(s=>{
+    const isWin = s.coherent!==false && s.score===best;
+    const isRej = s.coherent===false;
+    const cls = isWin ? "winner" : isRej ? "reject" : "ok";
+    const status = isWin ? "★ winner" : isRej ? "rejected" : "ok";
+    const imgs = (s.images&&s.images.length)
+      ? s.images.map(src=>`<img src="${src}" alt="${s.id}" loading="lazy" onerror="this.outerHTML='<div class=&quot;imgph&quot;>no img</div>'">`).join("")
+      : `<div class="imgph">cooking…</div>`;
+    const tags = (s.elements||[]).map(e=>`<span class="tag">${escapeHtml(e)}</span>`).join("");
+    return `<div class="setcard ${cls}">
+        <div class="imgs">${imgs}</div>
+        <div class="meta">
+          <span class="score">${s.score!=null?s.score.toFixed(1):"–"}</span>
+          <span class="sid">${escapeHtml(s.id||"")}</span>
+          <span class="status">${status}</span>
+        </div>
+        <div class="tags">${tags}</div>
+      </div>`;
+  }).join("");
+}
+
+function escapeHtml(s){ return String(s).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c])); }
+
+/* ---------- raindrop panel (pure read from state.raindrop) ---------- */
+const acked = new Set(JSON.parse(localStorage.getItem("rd_acked")||"[]"));
+const ackKey = e => e.iter+"|"+e.label;
+function renderRaindrop(state){
+  const rd = state.raindrop;
+  const rail = $("#rail"), app = $("#app"), alarm = $("#alarm");
+  // missing/empty -> render nothing, collapse rail, keep polling
+  if(!rd || !Array.isArray(rd.events) || rd.events.length===0){
+    rail.style.display="none"; app.classList.remove("has-rail"); alarm.classList.remove("show");
+    return;
+  }
+  app.classList.add("has-rail"); rail.style.display="";
+
+  // Open Workshop link
+  const ws = $("#wsBtn");
+  if(rd.workshop_url){ ws.style.display=""; ws.href = rd.workshop_url; }
+  else ws.style.display="none";
+
+  // feed, newest-first
+  const evs = [...rd.events].reverse();
+  $("#feed").innerHTML = evs.map(e=>{
+    const warn = e.severity==="warn";
+    const isAlarm = e.type==="alarm";
+    const cls = (isAlarm?"alarm-ev ":"") + (warn?"warn":"info");
+    return `<div class="evrow ${cls}">
+        <span class="evi">${isAlarm?"⚠":"●"}</span>
+        <div class="evbody">
+          <div class="evtop"><span class="evlabel">${escapeHtml(e.label||"")}</span><span class="eviter">iter ${e.iter}</span></div>
+          <div class="evdetail">${escapeHtml(e.detail||"")}</div>
+        </div>
+      </div>`;
+  }).join("");
+
+  // alarm banner: most recent unacknowledged alarm event
+  const alarms = rd.events.filter(e=>e.type==="alarm");
+  const latest = alarms.length ? alarms[alarms.length-1] : null;
+  if(latest && !acked.has(ackKey(latest))){
+    $("#alarmTxt").textContent = latest.detail || `${latest.label} detected at iter ${latest.iter}`;
+    alarm.dataset.key = ackKey(latest);
+    alarm.classList.add("show");
+  } else {
+    alarm.classList.remove("show");
+  }
+}
+$("#alarmDismiss").addEventListener("click", ()=>{
+  const k = $("#alarm").dataset.key;
+  if(k){ acked.add(k); localStorage.setItem("rd_acked", JSON.stringify([...acked])); }
+  $("#alarm").classList.remove("show");
+});
+
+/* ---------- replay (storytelling for the demo) ---------- */
+function startReplay(){
+  if(!lastGood || replaying) return;
+  const its = lastGood.iterations;
+  if(its.length<2) return;
+  replaying = true;
+  $("#replayBtn").classList.add("armed");
+  $("#replayBtn").textContent = "● replaying…";
+  let i = 0;
+  viewIndex = 0; render(lastGood);
+  const t = setInterval(()=>{
+    i++;
+    if(i >= its.length){
+      clearInterval(t);
+      replaying = false;
+      viewIndex = null;             // back to live latest
+      $("#replayBtn").classList.remove("armed");
+      $("#replayBtn").textContent = "▶ replay iterations";
+      if(lastGood) render(lastGood);
+      return;
+    }
+    viewIndex = i; render(lastGood);
+  }, 1100);
+}
+$("#replayBtn").addEventListener("click", startReplay);
+
+/* ---------- polling ---------- */
+function validState(d){
+  return d && typeof d==="object" && Array.isArray(d.iterations) && d.iterations.length>0
+    && d.iterations.every(it=> it && it.policy && Array.isArray(it.sets));
+}
+
+async function poll(){
+  let data = null;
+  try{
+    const res = await fetch("state.json?_="+Date.now(), {cache:"no-store"});
+    if(res.ok){
+      const txt = await res.text();
+      if(txt && txt.trim()) data = JSON.parse(txt);
+    }
+  }catch(e){ /* missing / malformed / file:// — ignore, keep last */ }
+
+  if(validState(data)){
+    missCount = 0;
+    lastGood = data;
+    $("#waiting").classList.remove("show");
+    setLive(true);
+    if(!replaying) render(data);     // don't fight the replay animation
+  } else {
+    missCount++;
+    if(!lastGood){
+      $("#waiting").classList.add("show");   // never had data yet
+    } else {
+      setLive(false);                         // had data; mark stale but keep showing
+    }
+  }
+}
+
+function setLive(ok){
+  const el = $("#livedot");
+  el.classList.toggle("stale", !ok);
+  $("#liveTxt").textContent = ok ? "LIVE" : "STALE";
+}
+
+/* ---------- boot ---------- */
+initCharts();
+poll();
+setInterval(poll, 1000);
+</script>
+</body>
+</html>
